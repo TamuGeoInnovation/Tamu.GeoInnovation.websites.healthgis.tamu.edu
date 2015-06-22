@@ -1,0 +1,273 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="USC.GISResearchLab.Websites.WebGIS.MasterPageCorrection" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Texas A&M University Geoservices - Free and Open Source Geocoding, Geocode Correction, Address Validation, GIS Data Capture</title>
+    <link rel="stylesheet"  href="<%=ResolveUrl("~/private/style/default.css")%>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=ResolveUrl("~/private/style/print.css")%>" type="text/css" media="print" />
+    <link rel="stylesheet" href="<%=ResolveUrl("~/css/theme.css")%>" type="text/css"/>
+    <link rel="stylesheet" href="<%=ResolveUrl("~/css/Scriptaculous.css")%>" type="text/css"/>
+    <link rel="stylesheet" href="<%=ResolveUrl("~/css/tabber.css")%>" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<%=ResolveUrl("~/css/mapstyle.css")%>" type="text/css"/>
+    <link rel="stylesheet" href="<%=ResolveUrl("~/css/gsearch.css")%>" type="text/css"/>
+    
+    <meta name="robots" content="all"/>
+    
+     <asp:contentplaceholder id="ContentplaceholderMeta" runat="server">
+        <meta name="author" content="Daniel W. Goldberg"/>
+        <meta name="description" content="A free and open source web-based GIS application portal for geocoding, geocode correction, address validation, and data capture"/>
+        <meta name="keywords" content="Texas A&M University, Department of Geography, online Geocoding, geocoder, Address Validation, Geocode Correction, Batch Geocoding, Interactive Geocoding, Web-Based GIS, Web Based GIS, Web GIS, GIS, Free, Open Source"/>
+    </asp:contentplaceholder>
+    
+    <script language="JavaScript" type="text/javascript">
+        
+        var TrackerId = "";
+        
+        if (document.domain == 'webgisdev.usc.edu')
+        {
+            trackerId = "UA-1185015-3";
+        }
+        else if(document.domain == 'webgis.usc.edu')
+        {
+            trackerId = "UA-1185015-4";
+        }
+        else
+        {
+            trackerId = "UA-1185015-3";
+        }
+    
+    </script>
+    
+    <script language="JavaScript" type="text/javascript" src="<%=ResolveUrl("~/scripts/GMapsResize.js") %>"></script>
+    <script language="JavaScript" type="text/javascript" src="<%=ResolveUrl("~/scripts/usc_default.js") %>"></script>
+    
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function initPage() {
+        sstchur_SmartScroller_Scroll();
+      linkRef = document.getElementById("VirtualPath").value;
+      preloadM(); // preload menu rollover
+      cssjsmenu('navbar');
+    }
+    //-->
+    </script>
+    
+    
+    <script type="text/javascript" id="postBackScroll">
+    function sstchur_SmartScroller_GetCoords()
+    {
+      var scrollX, scrollY;
+      
+      if (document.all)
+      {
+         if (!document.documentElement.scrollLeft)
+            scrollX = document.body.scrollLeft;
+         else
+            scrollX = document.documentElement.scrollLeft;
+               
+         if (!document.documentElement.scrollTop)
+            scrollY = document.body.scrollTop;
+         else
+            scrollY = document.documentElement.scrollTop;
+      }   
+      else
+      {
+         scrollX = window.pageXOffset;
+         scrollY = window.pageYOffset;
+      }
+
+      document.forms[1].ctl00_hiddenPostBackXCoordHolder.value = scrollX;
+      document.forms[1].ctl00_hiddenPostBackYCoordHolder.value = scrollY;
+    }
+
+    function sstchur_SmartScroller_Scroll()
+    {
+      var x = document.forms[1].ctl00_hiddenPostBackXCoordHolder.value;
+      var y = document.forms[1].ctl00_hiddenPostBackYCoordHolder.value;
+      window.scrollTo(x, y);
+    }
+
+    window.onscroll = sstchur_SmartScroller_GetCoords;
+    window.onkeypress = sstchur_SmartScroller_GetCoords;
+    window.onclick = sstchur_SmartScroller_GetCoords;
+    </script>
+
+</head>
+<body onmousemove="watchMouse( event )" onload="initPage();">
+    
+            
+    <!-- start header background -->
+    <div style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 1;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td bgcolor="#500000" width="48%" height="25">&nbsp;</td>
+                <td height="25"  style="background-image:url(/images/utility/bg-stripes.gif)" width="52%">
+                    <img src="<%=ResolveUrl("~/images/utility/spacer.gif") %>" alt="" width="52%" height="25" class="bottom" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" bgcolor="#000000"><img src="<%=ResolveUrl("~/images/utility/spacer.gif") %>" alt="" width="100%" height="25" class="bottom" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- end header background -->
+
+    <!-- start  header logo -->
+    <div style="position: absolute; top: 0px; right: 0px; width: 100%; z-index: 2;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+                <img src="<%=ResolveUrl("~/images/utility/spacer.gif") %>" alt="" width="100%" height="25" />
+            </td>
+                <td align="right">
+                    <a href="http://www.usc.edu/">
+                        <img src="<%=ResolveUrl("~/images/utility/USC_mono-gold-black-med.gif") %>" alt="USC" height="50" width="65" border="0" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- end  header logo -->
+    
+    <!-- start  header -->
+    <div style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 99;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                             <td style="width:20%;">
+                                <img src="<%=ResolveUrl("~/images/utility/spacer.gif") %>" alt="" width="7" height="23" class="bottom" />
+                            </td>
+                            <td bgcolor="#500000" style="width:20%;">
+                                <img src="<%=ResolveUrl("~/images/utility/USC-name-gold-cardinal.gif") %>" alt="Texas A&M University" height="25" width="255" border="0" class="bottom"/>
+                            </td>
+                            <td style="width:15%; background-image:url(/images/utility/bg-stripes.gif)">
+
+                                
+                                <form name="gs" method="get" action="http://www.usc.edu/search/sitesearch/index.php" id="headerSearch" class="uscheadF">
+
+				                        <input name="cx" value="017196764489587948961:0uzwqg1rcr4" type="hidden" />
+    			                        <input name="ie" value="utf8" type="hidden"/>
+   				                        <input name="oe" value="utf8" type="hidden"/>
+				                        
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <input class="search_box" type="text" name="q" id="searchString" value="Search Geoservices" size="30" tabindex="0" onfocus="if (value=='Search Geoservices') { value='';}" onblur="if (value=='') { value='Search WebGIS';}" />
+                                                </td>
+                                                <td>
+                                                    <input type="image" name="searchButton" id="searchButton" src="<%=ResolveUrl("~/images/utility/search.gif") %>" style="border:0" alt="GO" tabindex="1" class="uscheadF2" />
+                                                    <!--<button type="submit">Search</button>-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                
+                                
+                            </td>
+                            
+                            
+                            <td width="45%">
+                            
+                                <img src="<%=ResolveUrl("~/images/utility/spacer.gif") %>" alt="" width="7" height="23" class="bottom" />
+                                
+                                <!--
+                                <a class="noprint" href="http://www.usc.edu/index/">
+                                    <img src="<%=ResolveUrl("~/images/utility/index.gif") %>" alt="Site Index" height="23" width="56" border="0" class="bottom" />
+                                </a>
+                                
+                                <a class="noprint" href="http://www.usc.edu/directories/">
+                                    <img src="<%=ResolveUrl("~/images/utility/directories.gif") %>" alt="Directories" height="23" width="61" border="0" class="bottom" />
+                                </a>
+                                <a class="noprint" href="http://www.usc.edu/contact/">
+                                    <img src="<%=ResolveUrl("~/images/utility/contact.gif") %>" alt="Contact" height="23" width="46" border="0" class="bottom" />
+                                </a>
+                                <a class="noprint" href="http://www.usc.edu/emergency/">
+                                    <img src="<%=ResolveUrl("~/images/utility/emergency.gif") %>" alt="Emergency Information" height="23" width="85" border="0" class="bottom"/>
+                                </a>
+                                -->
+                             </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="25" valign="top">  
+                    <table class="noprint" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                             <td style="width:20%;">
+                                <img src="<%=ResolveUrl("~/images/utility/spacer.gif") %>" alt="" width="7" height="23" class="bottom" />
+                            </td>
+                            <td style="width:80%;">
+                                <asp:Literal runat="server" ID="LabelMenu"></asp:Literal>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- end  header -->
+
+    <div style="position: absolute; top: 50px; z-index: 1; width:100%">
+        <form id="form1" runat="server">
+        <asp:HiddenField runat="server" ID="hiddenPostBackXCoordHolder" />
+        <asp:HiddenField runat="server" ID="hiddenPostBackYCoordHolder" />
+
+            <input type="hidden" id="VirtualPath" value="<%= ResolveUrl("~/") %>" />
+             <table align="center" width="100%">
+                <tr valign="top">
+                    <td width="100%" valign="top">
+                        <asp:contentplaceholder id="MainContent" runat="server">
+                        </asp:contentplaceholder>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br />
+        <br />
+        <div class="footer">
+            <asp:Literal runat="server" id="LoginLabel"></asp:Literal>
+            <br />
+            <a href="<%=ResolveUrl("~/Default.aspx") %>">Home</a> | 
+            <a href="<%=ResolveUrl("~/Services/Default.aspx") %>">Services</a> | 
+            <a href="<%=ResolveUrl("~/UserServices/Databases/Default.aspx") %>">Databases</a> | 
+            <a href="<%=ResolveUrl("~/Surveys/Default.aspx") %>">Surveys</a> | 
+            <a href="<%=ResolveUrl("~/Support/Default.aspx") %>">Support</a> | 
+            <a href="<%=ResolveUrl("~/About/Default.aspx") %>">About</a> | 
+            <a href="<%=ResolveUrl("~/SiteMap.aspx") %>">Site Map</a> | 
+            <a href="<%=ResolveUrl("~/Support/ContactUs.aspx") %>">Contact</a>
+            <br />
+            &copy; 2012 <a href="http://www.tamu.edu">Texas A&amp;M University</a> <a href="http://geog.tamu.edu">Department of Geography</a>. All rights reserved.
+            <a href="<%=ResolveUrl("~/About/TermsOfUse.aspx") %>">Terms of Use</a> | <a href="<%=ResolveUrl("~/About/Privacy.aspx") %>">Privacy policy</a> 
+            <br /><br />
+            <a href="http://validator.w3.org/check?uri=<%= Request.Url.ToString() %>" target="_blank">
+                <img src="<%=ResolveUrl("~/images/utility/validation/valid-xhtml10.png") %>" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+            </a>
+        </div>
+        <div>
+            <asp:Label ID="LabelError" runat="server" Visible="true" Text="&nbsp;" ForeColor="red" Font-Bold="true"></asp:Label>
+        </div>
+    </div>
+    
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1185015-11']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</body>
+</html>
+

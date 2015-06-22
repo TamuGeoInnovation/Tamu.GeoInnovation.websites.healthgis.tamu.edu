@@ -1,0 +1,146 @@
+
+.highlightDelete{
+	background: red;
+	color: navy;
+}
+
+.highlightHighlightDelete{
+	background: darkred;
+	color: navy;
+	border: sold 1px navy;
+}
+
+.highlight {
+	background: #A6A8CC;
+	color: navy;
+	text-align:left;
+}
+
+.highlight-center {
+	background: #A6A8CC;
+	color: navy;
+	text-align:center;
+}
+
+.centeredText
+{
+	text-align:center;
+}
+
+.selected{
+	background: #EBB94D;
+	color: red;
+}
+
+.selectedBlue{
+	background: #A6A8CC;
+	color: red;
+}
+
+.initial
+{
+	background: #f0f0f0;
+	text-align:left;
+}
+
+.initialBorder
+{
+	border: solid 1px navy;
+}
+
+.initial-center
+{
+	background: #f0f0f0;
+	text-align:center;
+}
+
+#loadingMessage {
+    position: absolute;
+    width:  200px;
+
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid navy;
+    background-color: #FF8080;
+	color:#FFE21D;
+	font: bold 20px verdana;
+    z-index: 1;
+
+}
+
+
+.statusDiv {
+	padding: 3px;
+	font-family: verdana, 'trebuchet ms', sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: navy;
+
+}
+
+.MapDivVisible
+{
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	z-index:3; 
+	height: 500px; 
+	width: 500px;
+	border: solid 1px navy;
+	visibility:visible;
+}
+
+.MapDivHidden
+{
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	z-index:1; 
+	height: 500px; 
+	width: 500px;
+	border: solid 1px navy;
+	visibility:hidden;
+}
+
+.DivSignupHidden
+{
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	z-index:1; 
+	height: 500px; 
+	width: 500px;
+	border: solid 1px navy;
+	visibility:hidden;
+}
+
+.DivSignupVisible
+{
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	z-index:3; 
+	height: 500px; 
+	width: 500px;
+	border: solid 1px navy;
+	visibility:visible;
+	BACKGROUND-COLOR: white;
+}
+
+.DivTabberContainerVisible
+{
+	width:500px; 
+	height:500px;
+	z-index:3; 
+	visibility:visible;
+}
+
+.DivTabberContainerHidden
+{
+	width:500px; 
+	height:500px;
+	z-index:1; 
+	visibility:hidden;
+}

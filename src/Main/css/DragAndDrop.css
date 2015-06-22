@@ -1,0 +1,71 @@
+﻿li 
+{
+    MARGIN-BOTTOM: 10px
+}
+ol 
+{
+    MARGIN-TOP: 5px
+}
+.DragContainer, .OverDragContainer
+{
+	FLOAT: left; 
+	PADDING-TOP: 5px; 
+    PADDING-RIGHT: 5px; 
+    PADDING-LEFT: 5px; 
+    PADDING-BOTTOM: 0px; 
+    MARGIN: 3px; 
+    WIDTH: 100px; 
+    border: 1px solid navy; 
+    z-index: 3;
+}
+
+.DragBox, .OverDragBox, .DragDragBox, .miniDragBox
+{
+    PADDING-RIGHT: 2px; 
+    PADDING-LEFT: 2px; 
+    PADDING-BOTTOM: 2px; 
+    MARGIN-BOTTOM: 5px; 
+    PADDING-TOP: 2px; 
+    WIDTH: 94px; 
+    CURSOR: pointer; 
+    BACKGROUND-COLOR: #eee;
+    
+    border: 1px solid navy; 
+	font-family: verdana, 'trebuchet ms', sans-serif;
+	font-size: 10px;
+    z-index: 3;
+}
+
+.OverDragContainer 
+{
+    BACKGROUND-COLOR: #eee;
+}
+
+.OverDragBox
+{
+    BACKGROUND-COLOR: #ffff99;
+}
+
+.DragDragBox 
+{
+    FILTER: alpha(opacity=90); 
+    BACKGROUND-COLOR: #ff99cc;
+}
+
+legend 
+{
+    COLOR: #500000; 
+    font-family: verdana, 'trebuchet ms', sans-serif;
+	font-size: 11px;
+	font-weight: bold;  
+}
+
+fieldset 
+{
+    PADDING-RIGHT: 3px; 
+    PADDING-LEFT: 3px; 
+    PADDING-BOTTOM: 3px; 
+    PADDING-TOP: 3px;
+    border: solid 1px navy;
+}
+

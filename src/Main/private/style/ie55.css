@@ -1,0 +1,4 @@
+/* fix for IE5.5 improper block-model box model - for actual menu items */
+ul.uscmenu li ul li {
+  margin-left: -1.5em; 
+}

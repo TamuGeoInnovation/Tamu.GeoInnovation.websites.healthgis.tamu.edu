@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /TileServer/
+Disallow: /Management/
+Sitemap: http://geoservices.tamu.edu/WebGIS-SiteMap.xml
+

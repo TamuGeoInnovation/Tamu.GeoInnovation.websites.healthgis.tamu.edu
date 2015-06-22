@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home" description="Home">
+    <siteMapNode url="~/UserServices/Login.aspx" title="Login"  description="Login" />
+    <siteMapNode url="~/Signup.aspx" title="Signup"  description="Signup" />
+    <siteMapNode url="~/ForgotUserName.aspx" title="Forgot UserName"  description="Forgot UserName" />
+    <siteMapNode url="~/ForgotPassword.aspx" title="Forgot Password"  description="Forgot Password" />
+    <siteMapNode url="~/services/Default.aspx" title="services"  description="services">
+      <siteMapNode url="~/services/Correction/GeocodeCorrection.aspx" title="Geocode Correction"  description="Geocode Correction" >
+        <siteMapNode url="~/services/Correction/Correction.aspx" title="Correct"  description="Correct">
+          <siteMapNode url="~/services/Correction/RecordDetails.aspx" title="Record Details"  description="Record Details" />
+          <siteMapNode url="~/services/Correction/DatabaseDetails.aspx" title="Database Details"  description="Database Details" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/services/Geocode/BatchProcess/Default.aspx" title="Geocoding"  description="Geocoding" />
+      <siteMapNode url="~/services/PolygonTracing/PolygonTracing.aspx" title="Polygon Tracing"  description="Polygon Tracing" >
+        <siteMapNode url="~/services/PolygonTracing/PolygonTracer.aspx" title="Greenspace Tracer"  description="Greenspace Tracer" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Documentation/Default.aspx" title="Documentation"  description="Documentation" />
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,48 @@
+body { margin:0px }
+body, p, li, td, th, ul, ol, h3, h4, div, li, dt, dd { font-family:verdana, 'trebuchet ms', sans-serif; font-size:12px}
+a:link, a:hover, a:visited, a:active { text-decoration:none; color:#900 }
+a:hover, a:active { color:#333 }
+a:visited { color:#710 }
+
+.footer { background-color: #aaa; margin: -10px; padding: 4px 10px 4px 10px; font-style: italic; font-size: 10px; color: #000; }
+.text12headline  { font-size:12px; line-height:14px; color:#333;  font-weight: bold;   }
+.text16headline  { font-size:16px; line-height:16px; color:#FFF;  font-weight: bold;   }
+.text11deck  { font-size:11px; line-height:13px; color:#333   }
+.date  { font-size:12px; color:#333   }
+.datenews  { font-size:11px; color:#333   }
+.text10credit  { font-size:10px; line-height:10px; color:#333   }
+.text12story  { font-size:12px; line-height:16px; color:#000   }
+.text11side { font-size:11px; line-height:12px; color:#000;   }
+.text10nav { font-size:10px; line-height:12px; color:#fff }
+.text11header { font-size:11px; line-height:14px; color: #FFF;  font-weight: bold;  }
+.text11byline { font-size:11px; line-height:20px; color: #000;  font-weight: bold;  }
+.text12header { font-size:12px; line-height:12px; color: #FFF;  font-weight: bold;  }
+.text11bold  { font-size:11px; line-height:16px; color: #FFF;  font-weight: bold;  }
+.text12caption  { font-size:11px; line-height:15px; color:#fff  }
+
+.text11side a:link, .text11side a:visited { text-decoration:none; color:#900 }
+.text11side a:hover, .text11side a:active { text-decoration:none; color:#333 }
+
+.text12headline a:link, .text12headline a:visited { text-decoration:none; color:#900 }
+.text12headline a:hover, .text12headline a:active { text-decoration:none; color:#333 }
+
+.text11deck a:link, .text11deck a:visited { text-decoration:none; color:#900 }
+.text11deck a:hover, .text11deck a:active { text-decoration:none; color:#333 }
+
+.text10nav a:link, .text10nav a:visited { text-decoration:none; color: #E4E4E4; }
+.text10nav a:hover, .text10nav a:active { text-decoration:none; color:#FC0 }
+
+.text12story a:link, .text12story a:visited { text-decoration:none; color: #900; }
+.text12story a:hover, .text12story a:active { text-decoration:none; color:#333 }
+
+.search a:link, .search a:visited { text-decoration:none; color: #900; }
+.search a:hover, .search a:active { text-decoration:none; color:#333 }
+
+.textP { font-size:10px; color:#222 }
+.textP a:link, .textP a:visited { text-decoration:none; color:#222 }
+.textP a:hover, .textP a:active { text-decoration:none; color:#900 }
+
+/* NS 6 needs this to eliminate additional space below inline images */
+.block { display: block }
+.bottom { vertical-align: bottom }
+td.iblock img { display: block }

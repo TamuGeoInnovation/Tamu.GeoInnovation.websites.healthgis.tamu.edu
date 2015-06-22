@@ -1,0 +1,42 @@
+/** Copyright 2005 Google Inc. All rights reserved. */
+
+/* Green Image Theme for The Google AJAX Search API */
+
+.gsc-keeper {
+  color: #339538;
+  background-image: url('green_check.gif');
+}
+
+.gsc-resultsHeader td.gsc-twiddle-closed div.gsc-twiddle{
+  background-image: url('green_arrow_close.gif');
+}
+.gsc-resultsHeader td.gsc-twiddle-opened div.gsc-twiddle{
+  background-image: url('green_arrow_open.gif');
+}
+
+.gsc-resultsHeader .gsc-title{
+  color: #339538;
+}
+
+.gsc-resultsHeader .gsc-stats{
+  color: #339538;
+}
+
+.gsc-resultsHeader .gsc-configLabel{
+  color: #339538;
+}
+
+.gsc-resultsHeader td.gsc-configLabelCell span.gsc-twiddle-closed {
+  background-image: url('green_settings.gif');
+}
+
+
+.gsc-tabHeader.gsc-tabhActive {
+  border-top: 2px solid #339538;
+  color: #339538;
+}
+
+input.gsc-input {
+  border-color: #339538;
+  color: #339538;
+}

@@ -1,0 +1,184 @@
+html
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Geneva, sans-serif;
+	font-size: 11px;
+}
+
+form { margin: 0; padding: 0; }
+a { text-decoration: underline; }
+a img { border: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.gsc-control { width : 150px; }
+
+.clr
+{
+	clear: both;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: 0 -1px -1px 0;
+	border: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* .pkg class wraps enclosing block element around inner floated elements */
+.pkg:after
+{
+	content: " ";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+}
+
+* html .pkg { display: inline-block; }
+* html .pkg { height: 1%; }
+.pkg { display: block; }
+
+
+/* page layout */
+
+body { } /* center on ie */
+
+#container
+{
+	position: relative;
+	margin: 0 auto; /* center on everything else */
+	width: 800px auto;
+	text-align: left;
+}
+
+#container-inner { position: static; width: auto; }
+
+#banner { position: relative; }
+#banner-inner { position: static; }
+
+#pagebody { position: relative; width: 100%; }
+#pagebody-inner { position: static; width: 100%; }
+
+#alpha
+{
+	display: inline; /* ie win bugfix */
+	position: relative;
+	float: left;
+	min-height: 600px;
+}
+
+#alpha-map
+{
+	display: inline; /* ie win bugfix */
+	position: relative;
+	float: left;
+	min-height: 600px;
+}
+
+#beta
+{
+	display: inline; /* ie win bugfix */
+	position: relative;
+	float: left;
+	min-height: 100px;
+}
+
+#alpha-inner, #beta-inner
+{
+	position: static;
+}
+
+#alpha-map-inner
+{
+	position: static;
+}
+
+.content-nav
+{
+	margin: 10px;
+	text-align: center;
+}
+
+.date-header,
+.entry-content
+{
+	position: static;
+	clear: both;
+}
+
+.entry
+{
+	position: static;
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.entry-content
+{
+	clear: both;
+	margin: 5px 10px;
+}
+
+.entry-body
+{
+	clear: both;
+}
+
+img.image-full { width: 100%; }
+
+
+.module
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.module-content
+{
+	position: relative;
+	margin: 5px 10px 20px 10px;
+}
+
+.module-map
+{
+	position: relative;
+	margin: 0px 10px 20px 10px;
+}
+.module-map-inner
+{
+	position: static;
+	width: 450px; 
+	height: 450px;
+    border: 1px solid #bbb;
+}
+
+.DivResultTableVisible
+{
+	width:500; 
+	visibility:visible;
+}
+
+.DivResultTableHidden
+{
+	width:500; 
+	visibility:hidden;
+}

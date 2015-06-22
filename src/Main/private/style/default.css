@@ -1,0 +1,497 @@
+body { margin:0px }
+
+body, p, td, th, ul, ol, h3, h4, div, li, dt, dd { font-family:Arial, Helvetica, sans-serif; font-size:12px}
+a:link, a:hover, a:visited, a:active { text-decoration:none; color:#900 }
+a:hover, a:active { color:#333 }
+a:visited { color:#710 }
+
+.headFF { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#4B4B4B; background-color:#E5E5E5; height:22px; width:145px; padding-left:4px; padding-right:4px;}
+.headFB { font-size:11px; clip:rect(0px 23px 23px 0px) }
+
+.text10b  { font-size:10px; line-height:12px; color:#222 }
+.text10g { font-size:10px; line-height:12px; color:#777 }
+.text10w { font-size:10px; line-height:12px; color:#FFF }
+.text10r  { font-size:10px; line-height:12px; color:#900 }
+
+.text11b { font-size:11px; line-height:12px; color:#222 }
+.text11g { font-size:11px; line-height:12px; color:#777 }
+.text11w { font-size:11px; line-height:12px; color:#FFF }
+.text11r { font-size:11px; line-height:12px; color:#900 }
+
+.text11bw { font-size:11px; line-height:16px; color:#222 }.text11gw { font-size:11px; line-height:16px; color:#777 }
+.text11ww { font-size:11px; line-height:16px; color:#FFF }
+.text11rw { font-size:11px; line-height:16px; color:#900 }
+
+.text12b  { font-size:12px; line-height:12px; color:#222 }
+.text12g { font-size:12px; line-height:12px; color:#777 }
+.text12w { font-size:12px; line-height:12px; color:#FFF }
+.text12r { font-size:12px; line-height:12px; color:#900 }
+.text12bw  { font-size:12px; color:#222 }
+.text12bn  { font-size:12px; color:#222 }
+
+.text12b a:link, .text12bw a:link, .text11b a:link, .text11bw a:link, .text12b a:visited, .text12bw a:visited, .text11b a:visited, .text11bw a:visited, text12bn a:visited { color:#900 }
+.text12g a:link, .text11g a:link, .text11gw a:link, .text12g a:visited, .text11g a:visited, .text11gw a:visited { color:#900 }
+.text12w a:link, .text11w a:link, .text11ww a:link, .text12w a:visited, .text11w a:visited, .text11ww a:visited { color:#FC0 }
+
+.text12b a:hover, .text12bw a:hover, .text12bn a:hover, .text11b a:hover, .text11bw a:hover { color:#333 }
+.text12g a:hover, .text11g a:hover, .text11gw a:hover { color:#777 }
+.text12w a:hover, .text11w a:hover, .text11ww a:hover { color:#FFF }
+
+.textM { font-size:12px; text-indent:10px; color:#FC0 }
+.textM a:link, .textM a:visited { text-decoration:none; color:#FFF }
+.textM a:hover, .textM a:active { text-decoration:none; color:#FC0 }
+
+.textP { font-size:10px; color:#222 }
+.textP a:link, .textP a:visited { text-decoration:none; color:#222 }
+.textP a:hover, .textP a:active { text-decoration:none; color:#900 }
+
+/* Side Bar */
+#sidebar { text-align:left; } 
+.sidebar {} 
+
+/* Main Content */
+#contentcell { text-align:left; } 
+
+h2 { margin:0; margin-top:5px; margin-bottom:5px; color:#222; font-size:18px;  line-height: 20px;  }
+h3 { margin:0; margin-top:25px; margin-bottom:5px; color:#222; font-size:12px; }
+h4 { margin:0; margin-bottom:0px; color:#4b4b4b; font-size:12px; }
+
+/* .text12bw h2 { margin:0; margin-top:5px; margin-bottom:10px; color:#222; font-size:18px;  line-height: 10px;  } */
+
+td > h3:first-child { margin-top:0; }
+
+.text12bw p { margin-top:0; margin-bottom:10px; }
+ul { margin-top:0;  margin-left:0; padding-left:20px; list-style-type:none; }
+ol { margin-top:0; }
+li { margin-bottom:10px; }
+
+.sl ul { margin-top:0;  margin-left:0; padding-left:5px; list-style-type:none; }
+.sl li { margin-bottom:5px; }
+
+/* .text12bw li a { font-weight:bold; } */
+
+.bold { font-weight:bold; }
+
+dl { margin-top:0; }
+dt { font-weight:bold; }
+dd { margin-left: 10px; } 
+
+.level4 { color:#222; font-size:11px; font-weight:bold; }
+.level4 a:link, .level4 a:visited { text-decoration:none; color:#900 }
+.level4 a:hover, .level4 a:active { text-decoration:none; color:#333 }
+.level4 dl { margin-top:0; margin-bottom: 0 }
+.level4 dt { font-size:11px; font-weight:bold; }
+.level4 dd { font-size:10px;  } 
+
+.bullet { list-style-type:disc; }  
+.bullet li { margin-bottom:10px; }
+.emergency { color: #000000; background-color: #fc0; font-weight: bold; padding: 3px; }
+.emergency:hover { color: #fff; background-color: #900; }
+.indent { margin-left:5px; }
+
+select { color: #4b4b4b; font-size: 12px; background-color: #e4e4e4; padding:1px }
+option { padding:1px; }
+
+/* Last updated style */
+.updated {
+	font-size: 10px;
+	color: #777777;
+}
+
+/* Promo */
+#welcome { text-align:left; }
+a.promo_block { display: block; font-size: 12px; color: #333; }
+span.promo_link { margin-top: 10px; display: block; font-size: 12px; color: #900; font-weight: bold; }
+span.promo_link:hover { color: #000; }
+
+/* Header - menu.css */
+#uscheadMX1 { position: absolute; left: 0px; top: 0px; width: 100%; height: 25px; z-index: 10; visibility: hidden; display: block; }
+#uscheadMX2 { position: absolute; left: 0px; top: 80px; width: 100%; height: 400px; z-index: 10; visibility: hidden; display: block; }
+
+.uscheadM { position: absolute; left: 0px; top: 50px; height: 25px; width: 100%; visibility: hidden; z-index: 3; display: block; }
+.uscheadMM  { color: #fc0; }
+.uscheadMM a { font-size: 12px; font-family: Arial, Helvetica, sans-serif; line-height: 16px;  color: #fff; }
+.uscheadMM a:link, .uscheadMM a:visited { color: #fff; }
+.uscheadMM a:hover, .uscheadMM a:active { color: #fc0; }
+.uscheadF { margin-top: 0px; margin-bottom: 0px; }
+.uscheadF1 { color: #4b4b4b; font-size: 12px; background-color: #e5e5e5; vertical-align: top; padding: 4px; width: 100px; height: 13px; }
+.uscheadF2 { vertical-align: top; border: 0px; margin: 0px; width: 23px; height: 20px; }
+.uscheadMM a.selected, a.selected:link, a.selected:visited  { color: #fc0; }
+
+.search_box { 
+    color: #4b4b4b; 
+    font-size: 12px; 
+    background-color: #e5e5e5; 
+    vertical-align: top; 
+    padding: 2px; 
+    width: 150px;
+    margin: 0;
+}
+
+
+/* Drop-down Widths */
+#M1_menu { width: 13em; }
+#M2_menu { width: 13em; }
+#M3_menu { width: 13em; }
+#M4_menu { width: 13em; }
+#M5_menu { width: 13em; }
+#M6_menu { width: 13em; }
+#M7_menu { width: 13em; }
+#M8_menu { width: 13em; }
+
+
+/* NDE Menu Functionality Code */
+
+/*
+use xb settings to make ul/li appear the 
+same in mozilla, ie and opera
+*/
+
+ul.uscmenu, ul.uscmenu ul { display: block; margin: 0; border: 0; padding: 0; }
+
+ul.uscmenu li { margin: 0; border: 0; padding: 0; }
+
+/*
+top level items in ul are inline to display horizontally
+across page
+*/
+
+ul.uscmenu li {
+  display: inline;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+nested lists inside of the top level items are initially
+not displayed
+*/
+ul.uscmenu li ul {
+  display: block;
+  position: absolute;
+  color: #900;
+  background-color: #e5e5e5;
+  border: 1px solid #999;
+  left: 0;
+  top: 1em; /* required for NS 7.x/Gecko 1.0.x but not Gecko 1.3 */
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* needed to keep IE from bubbling events
+from items that are not contained but only
+covered. */
+ul.uscmenu {
+  background-color: transparent;
+}
+
+
+/* Additional Custom Styling (visual) */
+
+ul.uscmenu * {
+  font: 1em verdana sans-serif;
+}
+
+ul.uscmenu li a {
+  display: inline;
+  text-decoration: none;
+  margin: 0;
+  color: #500000;
+}
+
+ul.uscmenu li a:hover {
+  color: #FFF;
+  background-color: #999999;
+}
+
+/*
+fix up the submenu items
+voice-family lines screen correct CSS values from browsers that
+improperly lay out block-level boxes and have broken CSS parsers
+(IE5.5/Win)
+*/
+ul.uscmenu li ul li {
+  padding: 0;
+  display: block;
+  width: 100%;
+  margin-left: 0;
+}
+
+ul.uscmenu li.submenu ul a {
+  color: #500000 !important;
+  font-size: 11px;
+  font-family: Arial;
+  display: block;
+  white-space: nowrap;
+  line-height: 1.75em;
+  margin: 0;
+  padding: 0 14px;
+}
+
+ul.uscmenu li.submenu ul a:hover {
+  color: white !important;
+  background-color: #999;
+}
+
+/*Hide M6 subnav*/
+#M1_menu {
+	display: none;
+}
+
+/* sidebar menu */
+
+/* sidebar level 1 */
+.sidebar ul {
+    margin: 0 0 75px 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    padding: 10px 6px 10px 6px;
+    font-size: 11px;
+    color: #222;
+}
+
+/* If you are working locally and want the sidebars to dispay the grey background 
+   all background URLs have to be prefixed with / as in
+
+   background:url("/WebGis/Images/Utility/arrow-left-red.gif") center right no-repeat;
+
+*/
+
+.sidebar ul li a {
+    font-weight: bold;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li#here {
+    background:url("/Images/Utility/bg-stripes-light.gif");  
+}
+
+.sidebar ul li#here a {
+    color: #222;
+    background:url("/Images/Utility/clear.gif");
+}
+
+.sidebar ul li#no_arrow a {
+    padding-right: 0;
+    background:url("/Images/Utility/clear.gif");
+}
+
+.noarrow a {
+    padding-right: 0;
+    background:none;
+}
+
+.sidebar ul li.cardinal#here a {
+    color: #900;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li.cardinal#here a:hover {
+    color: #222;
+}
+
+.sidebar ul li.heading {
+    background-color: #777;
+    color: #fff;
+    padding: 5px 6px 5px 6px;
+    border-bottom: 0;
+    font-weight: bold;
+}
+    
+/* sidebar level 2 */
+.sidebar ul li ul {
+    margin: 0;
+}
+    
+.sidebar ul li ul li {
+    border: 0;
+    padding: 1px 0 0 9px;
+}
+
+.sidebar ul li ul li a {
+    font-weight: normal;
+}
+    
+.sidebar ul li#here ul li a {
+    color: #900;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li#here ul li a:hover {
+    color: #000;
+}
+
+.sidebar ul li#here ul li#herehere a, .sidebar ul li#here ul li a#herehere {
+    color: #222;
+    background:url("/Images/Utility/clear.gif");
+    padding: 0;
+}
+
+.sidebarLevel2Here a {
+    color: #900;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebarLevel2Here a:hover {
+    color: #000;
+}
+
+
+/* sidebar level 3 */
+.sidebar ul li ul li ul{
+    margin: 0;
+}
+    
+.sidebar ul li ul li ul li {
+    border: 0;
+    padding: 1px 0 0 9px;
+}
+
+.sidebar ul li ul li ul li a {
+    font-weight: normal;
+}
+    
+.sidebar ul li#here ul li#here ul li a {
+    color: #900;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li#here ul li ul li a:hover {
+    color: #000;
+}
+
+.sidebar ul li#here ul li#herehere ul li a {
+    color: #900;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li#here ul li#herehere ul li a:hover {
+    color: #000;
+}
+
+.sidebar ul li#here ul li#herehere ul li#hereherehere a, .sidebar ul li#here ul li#herehere ul li a#hereherehere {
+    color: #222;
+    background:url("/Images/Utility/clear.gif");
+    padding: 0;
+}
+
+/* sidebar level 4 */
+.sidebar ul li ul li ul li ul{
+    margin: 0;
+}
+    
+.sidebar ul li ul li ul li ul li{
+    border: 0;
+    padding: 1px 0 0 9px;
+}
+
+.sidebar ul li ul li ul li ul li a {
+    font-weight: normal;
+}
+    
+.sidebar ul li#here ul li#here ul li ul li a {
+    color: #900;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li#here ul li ul li ul li a:hover {
+    color: #000;
+}
+
+.sidebar ul li#here ul li#herehere ul li#hereherehere ul li a {
+    color: #900;
+    padding-right: 7px;
+    background:url("/Images/Utility/arrow-left-red.gif") center right no-repeat;
+}
+
+.sidebar ul li#here ul li#herehere ul li#hereherehere ul li a:hover {
+    color: #000;
+}
+
+.sidebar ul li#here ul li#herehere ul li#hereherehere ul li#herehereherehere a, .sidebar ul li#here ul li#herehere ul li#hereherehere ul li#herehereherehere a{
+    color: #222;
+    background:url("/Images/Utility/clear.gif");
+    padding: 0;
+}
+
+/* Middle gray bar styles */
+#middle_bar {
+	border-left: 2px solid #fff;
+	height:25px;
+	width: 849px;
+	text-align: left;
+	font: 12px/25px verdana, helvetica, arial;
+	font-weight: bold;
+	}
+	
+#middle_bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+#middle_bar li 
+{
+	background-color: #777;
+	margin: 0;
+	padding: 0;
+	float: left;
+	border-right: 2px solid #fff;
+	width: 280px;
+	}
+
+#middle_bar li a:link, #middle_bar li a:visited {
+	background: url("/Images/Utility/middle_bar_arrow.gif") left no-repeat;
+	padding-left: 30px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	}
+	
+#middle_bar li a:hover, #middle_bar li a:active {
+	background: #999 url("/Images/Utility/middle_bar_arrow2.gif") left no-repeat;
+	color: #fff;
+	}
+
+/* used for re-centering purposes */
+.recenter {
+	padding-left: 0px;
+	}
+
+/* Print Style */
+
+.printbar { }
+
+/* RSS News Style */
+ul.news li {
+	margin: 6px 0;
+	clear: both;
+}
+ul.news li img {
+	height: 50px;
+	width: 50px;
+}
+ul.news li strong {
+	display:block;
+	font-weight:bold;
+}
+ul.news li img {
+	float: right;
+	padding: 1px;
+	border:1px solid #e2e2e2;
+	margin: 1px 5px 5px 5px;
+}
+

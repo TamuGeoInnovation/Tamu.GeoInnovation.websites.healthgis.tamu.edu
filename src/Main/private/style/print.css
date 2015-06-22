@@ -1,0 +1,149 @@
+/* ------- print CSS, appended to orignal default.css (included below) RDG, sporadically 9/24 - 10/08 */
+
+.printbar { 
+  display: block; 
+}
+
+.noprint, .uscheadF, .uscheadF2, .uscheadM, #uscheadMX1, #uscheadMX2, #uscheadM1, #uscheadM2, #uscheadM3, #uscheadM4, #uscheadM5, #uscheadM6, #uscheadM7, #uscheadM8 {
+  	display: none;
+  }
+
+/* hides dropdown menus, search form and buttons, 
+   original menus, and anything .noprint	*/
+
+  #promo	{
+  	border-top: solid #999 1px;
+  	border-bottom: solid #999 1px;
+  	}
+  		/* adds top and bottom borders to promo table (white block, promo image)
+  		 for slick print styling. space needs to be cut up.
+  		 */
+	
+  #sidebar	{
+        text-align: left;
+  	border-right: solid #999 1px;
+  	}
+  		/* adds border to template a sidebar 
+  	   class="sidebar" (not id) included within original template A
+  		 */
+	
+  #contentcell { text-align: left; }
+  #contentcell	p,   #contentcell ul li {
+  	padding-right: 80px;
+  	padding-left: 10px;
+  	}
+  		/* pads body text; */
+  			 
+  #sidebar a img {
+  	margin-left: 10px;
+  	}
+  			/* spaces tiny red link sidebar arrows to the right in mozilla */
+  			
+/* ------ end class / id additions */	
+
+
+
+/* ------- addtional style rule tweaks */
+			
+  td.text12bw	p{
+  	font-size: 10pt;
+  	}		
+  	
+  a:link, a:hover, a:visited, a:active { text-decoration: underline; color:#900}	
+  #sidebar a:link, #sidebar  a:hover, #sidebar  a:visited, #sidebar  a:active { text-decoration: none; color:#900; border-bottom: dotted 1px #DD9F9F;}	
+  #contentcell a:link, #contentcell a:hover, #contentcell  a:visited, #contentcell  a:active { text-decoration: none; color:#900; border-bottom: dotted 1px #DD9F9F;}	
+  
+  		
+
+/* default.css */
+body { margin:0px }
+body, p, th, ul, ol, h3, h4, div, li, dt, dd { font-family:Arial, Helvetica, sans-serif; font-size:12px}
+
+a:hover, a:active { color:#333 }
+a:visited { color:#710 }
+
+.headFF { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#4B4B4B; background-color:#E5E5E5; height:22px; width:145px; padding-left:4px; padding-right:4px;}
+.headFB { font-size:11px; clip:rect(0px 23px 23px 0px) }
+
+.text10b  { font-size:10px; line-height:12px; color:#222 }
+.text10g { font-size:10px; line-height:12px; color:#777 }
+.text10w { font-size:10px; line-height:12px; color:#FFF }
+.text10r  { font-size:10px; line-height:12px; color:#900 }
+
+.text11b { font-size:11px; line-height:12px; color:#222 }
+.text11g { font-size:11px; line-height:12px; color:#777 }
+.text11w { font-size:11px; line-height:12px; color:#FFF }
+.text11r { font-size:11px; line-height:12px; color:#900 }
+
+.text11bw { font-size:11px; line-height:16px; color:#222 }
+.text11gw { font-size:11px; line-height:16px; color:#777 }
+.text11ww { font-size:11px; line-height:16px; color:#FFF }
+.text11rw { font-size:11px; line-height:16px; color:#900 }
+
+.text12b  { font-size:12px; line-height:12px; color:#222 }
+.text12g { font-size:12px; line-height:12px; color:#777 }
+.text12w { font-size:12px; line-height:12px; color:#FFF }
+.text12r { font-size:12px; line-height:12px; color:#900 }
+.text12bw  { font-size:12px; color:#222 }
+.text12bn  { font-size:12px; color:#222 }
+
+.text12b a:link, .text12bw a:link, .text11b a:link, .text11bw a:link, .text12b a:visited, .text12bw a:visited, .text11b a:visited, .text11bw a:visited, text12bn a:visited { color:#900 }
+.text12g a:link, .text11g a:link, .text11gw a:link, .text12g a:visited, .text11g a:visited, .text11gw a:visited { color:#900 }
+.text12w a:link, .text11w a:link, .text11ww a:link, .text12w a:visited, .text11w a:visited, .text11ww a:visited { color:#FC0 }
+
+.text12b a:hover, .text12bw a:hover, .text12bn a:hover, .text11b a:hover, .text11bw a:hover { color:#333 }
+.text12g a:hover, .text11g a:hover, .text11gw a:hover { color:#777 }
+.text12w a:hover, .text11w a:hover, .text11ww a:hover { color:#FFF }
+
+.textM { font-size:12px; text-indent:10px; color:#FC0 }
+.textM a:link, .textM a:visited { text-decoration:none; color:#FFF }
+.textM a:hover, .textM a:active { text-decoration:none; color:#FC0 }
+
+.textP { font-size:10px; color:#222 }
+.textP a:link, .textP a:visited { text-decoration:none; color:#222 }
+.textP a:hover, .textP a:active { text-decoration:none; color:#900 }
+
+
+/* Side Bar 
+.sidebar {} 
+*/
+
+
+/* Main Content */
+h2 { margin:0; margin-top:5px; margin-bottom:5px; color:#222; font-size:18px;  line-height: 20px;  }
+h3 { margin:0; margin-top:25px; margin-bottom:5px; color:#222; font-size:12px; }
+h4 { margin:0; margin-bottom:0px; color:#4b4b4b; font-size:12px; }
+
+/* .text12bw h2 { margin:0; margin-top:5px; margin-bottom:10px; color:#222; font-size:18px;  line-height: 10px;  } */
+
+td > h3:first-child { margin-top:0; }
+
+.text12bw p { margin-top:0; margin-bottom:10px; }
+ul { margin-top:0;  margin-left:0; padding-left:20px; list-style-type:none; }
+ol { margin-top:0; }
+li { margin-bottom:10px; }
+
+.sl ul { margin-top:0;  margin-left:0; padding-left:5px; list-style-type:none; }
+.sl li { margin-bottom:5px; }
+
+/* .text12bw li a { font-weight:bold; } */
+
+.bold { font-weight:bold; }
+
+dl { margin-top:0; }
+dt { font-weight:bold; }
+dd { margin-left: 10px; } 
+
+.level4 { color:#222; font-size:11px; font-weight:bold; }
+.level4 a:link, .level4 a:visited { text-decoration:none; color:#900 }
+.level4 a:hover, .level4 a:active { text-decoration:none; color:#333 }
+.level4 dl { margin-top:0; margin-bottom: 0 }
+.level4 dt { font-size:11px; font-weight:bold; }
+.level4 dd { font-size:10px;  } 
+
+.bullet { list-style-type:disc; }  
+.bullet li { margin-bottom:10px; }
+.indent { margin-left:5px; }
+
+select { color: #4b4b4b; font-size: 12px; background-color: #e4e4e4; padding:1px }
+option { padding:1px; }

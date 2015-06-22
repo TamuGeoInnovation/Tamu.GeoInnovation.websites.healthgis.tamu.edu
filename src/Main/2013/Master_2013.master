@@ -1,0 +1,95 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/2013/Master_Section.master" CodeFile="Master_2013.master.cs" Inherits="Master_Section_Services" %>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolderHead" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentPlaceHolderHead" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentAreaHeader" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentAreaHeader" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentSectionNav" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentSectionNav" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+    
+    <ul runat="server">
+        <asp:HiddenField runat="server" ID="hiddenListStart" />
+        <li runat="server">
+            <a href="<%= ResolveUrl("~/2013/") %>">
+                Objectives
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub01" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li runat="server">
+            <a href="<%= ResolveUrl("~/2013/Topics.aspx") %>">
+                Topics
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub02" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li runat="server">
+            <a href="<%= ResolveUrl("~/2013/Dates.aspx") %>">
+                Important Dates
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub06" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li runat="server">
+            <a href="<%= ResolveUrl("~/2013/AcceptedPapers.aspx") %>">
+                Accepted Papers
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub05" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li runat="server">
+            <a href="<%= ResolveUrl("~/2013/Program.aspx") %>">
+                Program
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub03" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li runat="server">
+            <a href="<%= ResolveUrl("~/2013/Submission.aspx") %>">
+                Paper Submission
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub04" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li id="Li1" runat="server">
+            <a href="<%= ResolveUrl("~/2013/Organization.aspx") %>">
+                Organization
+            </a>
+            <asp:ContentPlaceHolder id="ContentSectionNavSub07" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+        <li id="Li2" runat="server">
+            <a href="<%= ResolveUrl("~/") %>">
+                HealthGIS 2014
+            </a>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        
+            </asp:ContentPlaceHolder>
+        </li>
+    </ul>
+    
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentArea" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentArea" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

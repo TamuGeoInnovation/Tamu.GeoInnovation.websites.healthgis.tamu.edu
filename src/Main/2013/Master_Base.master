@@ -1,0 +1,165 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master_Base.master.cs" Inherits="Master_Base" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>Texas A&M Geoservices</title>
+    <meta name="robots" content="all" />
+    <meta name="author" content="Daniel W. Goldberg"/>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
+
+    <!-- set JS linkRef, used in external JS -->
+    <asp:Literal runat="server" ID="txtVirtualPath"></asp:Literal>
+       
+    <link rel="stylesheet"  href="<%=ResolveUrl("~/private/style/default.css")%>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=ResolveUrl("~/private/style/print.css")%>" type="text/css" media="print" />
+    <link rel="stylesheet" href="<%=ResolveUrl("~/css/Feeds.css")%>" type="text/css"/>
+    
+    <script language="JavaScript" type="text/javascript" src="<%=ResolveUrl("~/scripts/usc_default.js") %>"></script>
+
+    <script language="JavaScript" type="text/javascript">
+        
+        var trackerId = "";
+        
+        if (document.domain == 'webgisdev.usc.edu')
+        {
+            trackerId = "UA-1185015-3";
+        }
+        else if(document.domain == 'webgis.usc.edu')
+        {
+            trackerId = "UA-1185015-4";
+        }
+        else
+        {
+            trackerId = "UA-1185015-3";
+        }
+    
+    </script>
+
+    <!-- Local CSS and JS -->
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function initPage() 
+    { 
+        sstchur_SmartScroller_Scroll();
+        preloadM();
+        cssjsmenu('navbar');
+        if (document.getElementById) 
+        {
+            var kill = document.getElementById('hoverJS'); 
+            if(kill) 
+            {
+                kill.disabled = true;
+            }
+        }
+    }
+    //-->
+    </script>
+    
+   
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body  lang="en" onload="initPage();">
+    
+    
+    <table border="0" cellspacing="0" cellpadding="0" align="center" style="width:850px;border: 1px solid gray;">
+        <tr valign="top">
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                    <tr>
+                        <td>
+                            <table width="850" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td>
+                                        <a href="http://geog.tamu.edu/">
+                                            <img src="<%= ResolveUrl("~/images/tamu/geogBanner.jpg") %>" alt="Texas A&amp;M Geography" width="850" height="67" border="0" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="850" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td>
+                                        <a href="http://healthgis.tamu.edu/">
+                                            <img src="<%= ResolveUrl("~/images/healthgis_2013.jpg") %>" alt="ACM HealthGIS" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                  </table>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <img src="<%= ResolveUrl("~/images/Utility/spacer.gif") %>" alt="" height="2" class="bottom" />
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                        <td background="<%= ResolveUrl("~/images/Utility/bg-stripes-light.gif") %>">
+                            <form id="form1" runat="server">
+                            
+                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            
+                            </asp:ContentPlaceHolder>
+                            
+                            <asp:HiddenField runat="server" ID="hiddenPostBackXCoordHolder" />
+                            <asp:HiddenField runat="server" ID="hiddenPostBackYCoordHolder" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    <!-- BEGIN Quick Links -->
+    <table width="850" cellpadding="0" border="0" align="center">
+        <tbody>
+            <tr>
+                <td class="text11b" style="line-height: 16px; text-align:center">
+                    <strong>Quick Links:</strong>
+                    <a href="<%=ResolveUrl("~/Default.aspx") %>">Home</a> | 
+                    <a href="http://tamu.edu">Texas A&amp;M</a> | 
+                     <a href="http://geoservices.tamu.edu">Texas A&amp;M GeoServices</a> | 
+                    <a href="http://geog.tamu.edu">Texas A&amp;M Geography</a> 
+                    
+                    <br />
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END Quick Links -->
+    
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1185015-11']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+</html>

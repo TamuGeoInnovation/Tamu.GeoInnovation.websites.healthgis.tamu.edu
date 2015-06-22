@@ -1,0 +1,27 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Master_Section.master" CodeFile="Master_Section_Support.master.cs" Inherits="Master_Section_Support" %>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolderHead" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentPlaceHolderHead" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentAreaHeader" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentAreaHeader" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentSectionNav" Runat="Server">
+ <asp:ContentPlaceHolder id="ContentSectionNav" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentArea" Runat="Server">
+    <asp:ContentPlaceHolder id="ContentArea" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

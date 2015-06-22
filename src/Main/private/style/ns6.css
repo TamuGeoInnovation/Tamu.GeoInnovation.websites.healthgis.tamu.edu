@@ -1,0 +1,7 @@
+/* NS 6 needs this to eliminate additional space below inline images */
+.block { display: block }
+.bottom { vertical-align: bottom }
+td.iblock img { display: block }
+
+/* Menu Style */
+.uscheadF1 { border:2px inset InactiveBorder; height: 23px; width: 100px; padding: 2px; margin: 0px; max-height: 23px; }
