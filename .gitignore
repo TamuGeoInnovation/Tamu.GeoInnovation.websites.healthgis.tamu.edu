@@ -22,6 +22,9 @@
 #[Bb]in/
 [Oo]bj/
 
+#don't track the bin folder of websites
+[Ss]rc/[Mm]ain/[Bb]in/
+
 # Visual Studio 2015 cache/options directory
 #.vs/
 
