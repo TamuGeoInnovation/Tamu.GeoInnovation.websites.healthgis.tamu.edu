@@ -23,7 +23,10 @@
 [Oo]bj/
 
 #don't track the bin folder of websites
-[Ss]rc/[Mm]ain/[Bb]in/
+[Ss]rc/[Mm]ain/[Bb]in/**
+
+#don't track the tracelogs
+*[Tr]ace[Ll]*.txt
 
 # Visual Studio 2015 cache/options directory
 #.vs/
